@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+     <ScrollView
+        android:id="@+id/regist_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		 android:padding="10dip"
+        android:background="#ffefebe7" >
+  		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+          <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/amenderr_meterid"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_marginRight="10dip"
+		          android:text="@string/amenderr_meterid"
+		          android:textColor="@color/black" />
+	          <EditText
+	              android:id="@+id/EditTextmeterid"
+	              android:layout_width="160.0dip"
+	              android:layout_height="40.0dip"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_meteridhint"
+	              android:maxLength="8"
+	              android:layout_weight="1"
+				  android:inputType="numberDecimal"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <Button
+	              android:id="@+id/Buttonreadparameter"
+				  style="@style/button_common_blue_s"
+	              android:gravity="center"
+				  android:layout_marginLeft="5dip"
+	              android:text="@string/amenderr_readparameter" />
+		   </LinearLayout>
+		   <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+		   <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip"
+	         android:gravity="center">
+	          <TextView
+		          android:id="@+id/amenderr_name"
+		          android:layout_width="50.0dip"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_name"
+		          android:layout_weight="1"
+		          android:textColor="@color/black" />
+	          <TextView
+		          android:id="@+id/amenderr_err"
+		          android:layout_width="70.0dip"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_err"
+		          android:layout_weight="1"
+		          android:textColor="@color/black" />
+	          <TextView
+		          android:id="@+id/amenderr_qnold"
+		          android:layout_width="100.0dip"
+		          android:layout_weight="1"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_qnold"
+		          android:textColor="@color/black" />
+	          <TextView
+		          android:id="@+id/amenderr_qnnew"
+		          android:layout_width="100.0dip"
+		          android:layout_weight="1"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_qnnew"
+		          android:textColor="@color/black" />
+		  </LinearLayout>
+           <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/amenderr_qn"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_qn"
+		          android:layout_weight="1"
+		          android:textColor="@color/black" />
+		      <EditText
+	              android:id="@+id/EditTextqn_1"
+	              android:layout_width="70.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn_1hint"
+				  android:inputType="numberSigned"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqn_2"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:editable="false"
+	              android:focusable="false"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn_2hint"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqn_3"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+				  android:inputType="number"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn_3hint"
+	              android:textColor="@color/black">
+	          </EditText>
+		  </LinearLayout>
+		  <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/amenderr_qn2"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_qn2"
+		          android:layout_weight="1"
+		          android:textColor="@color/black" />
+		      <EditText
+	              android:id="@+id/EditTextqn2_1"
+	              android:layout_width="70.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:background="@drawable/edit_text_x"
+				  android:inputType="numberSigned"
+	              android:hint="@string/amenderr_qn2_1hint"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqn2_2"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:editable="false"
+	              android:focusable="false"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn2_2hint"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqn2_3"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+				  android:inputType="number"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn2_3hint"
+	              android:textColor="@color/black">
+	          </EditText>
+		  </LinearLayout>
+		  <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/amenderr_qn1"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_qn1"
+		          android:layout_weight="1"
+		          android:textColor="@color/black" />
+	          <EditText
+	              android:id="@+id/EditTextqn1_1"
+	              android:layout_width="70.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+				  android:inputType="numberSigned"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn1_1hint"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqn1_2"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:editable="false"
+	              android:focusable="false"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn1_2hint"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqn1_3"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+				  android:inputType="number"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qn1_3hint"
+	              android:textColor="@color/black">
+	          </EditText>
+		  </LinearLayout>
+		  <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/amenderr_qmin"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/amenderr_qmin"
+		          android:layout_weight="1"
+		          android:textColor="@color/black" />
+	          <EditText
+	              android:id="@+id/EditTextqmin_1"
+	              android:layout_width="70.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qmin_1hint"
+				  android:inputType="numberSigned"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqmin_2"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:editable="false"
+	              android:focusable="false"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qmin_2hint"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <EditText
+	              android:id="@+id/EditTextqmin_3"
+	              android:layout_width="100.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+	              android:editable="false"
+	              android:focusable="false"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/amenderr_qmin_3hint"
+	              android:textColor="@color/black">
+	          </EditText>
+		  </LinearLayout>
+
+		  <LinearLayout
+		      android:layout_width="fill_parent"
+		      android:layout_height="fill_parent"
+		      android:layout_marginTop="5.0dip"
+		      android:gravity="center" >
+
+		      <Button
+		          android:id="@+id/Buttonsetq"
+				  style="@style/button_common_blue"
+		          android:gravity="center"
+		          android:text="@string/amenderr_setq" />
+		  </LinearLayout>
+		   <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+		  	<LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/readparameter_totalpoint"
+		          android:layout_width="0dip"
+		          android:layout_height="wrap_content"
+		          android:layout_weight="1"
+		          android:text="@string/amenderr_totalpoint"
+		          android:textColor="@color/black" />
+
+	          <Spinner
+                    android:id="@+id/spinnerTotalpoint"
+                    android:layout_weight="1"
+                    android:layout_width="200dip"
+                    android:layout_height="50.0dip" />
+		</LinearLayout>
+		
+		  	<LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+		      <TextView
+		          android:id="@+id/readparameter_total"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/readparameter_total"
+		          android:textColor="@color/black" />
+	          <EditText
+	              android:id="@+id/edtTotalUsed"
+	              android:layout_width="0dip"
+	              android:layout_height="40.0dip"
+	              android:background="@drawable/edit_text_x"
+	              android:ems="10"
+	              android:hint="@string/readparameter_totalhint"
+	              android:maxLength="8"
+	              android:singleLine="true" 
+	              android:layout_weight="1"
+				  android:inputType="numberDecimal"
+	              android:layout_marginLeft="5dip"
+	              android:textColor="@color/black">
+	          </EditText>
+	          <Button
+	              android:id="@+id/btnAmendUsed"
+				  style="@style/button_common_blue_s"
+	              android:gravity="center"
+				  android:layout_marginLeft="5dip"
+	              android:text="@string/readparameter_amendused" />
+		</LinearLayout>
+
+ 		<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>>
+		  <LinearLayout
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginTop="5.0dip" >
+
+		      <EditText
+		          android:id="@+id/EditTextadjust"
+				  android:layout_width="0dip"
+				  android:layout_height="40.0dip"
+		          android:background="@drawable/edit_text_x"
+		          android:ems="10"
+		          android:layout_weight="1"
+				  android:inputType="numberDecimal"
+		          android:text="1000"
+		          android:textColor="@color/black" >
+		      </EditText>
+			  <Button
+				  android:id="@+id/ButtonsetAdjust"
+				  style="@style/button_common_blue_s"
+				  android:gravity="center"
+				  android:layout_marginLeft="5dip"
+				  android:text="@string/amenderr_setAdjust" />
+
+		  </LinearLayout>
+
+		   <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+ 			<LinearLayout
+		      android:layout_width="fill_parent"
+		      android:layout_height="fill_parent"
+		      android:layout_marginTop="5.0dip"
+		      android:gravity="center" >
+
+		      <Button
+		          android:id="@+id/btnReset"
+				  style="@style/button_common_blue"
+		          android:layout_marginTop="5.0dip"
+		          android:layout_marginBottom="5.0dip"
+		          android:gravity="center"
+		          android:text="@string/amenderr_reset" />
+		  </LinearLayout>
+		  
+	</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

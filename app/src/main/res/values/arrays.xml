@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="main_titles_arrays">
+        <item>@string/main_tab_name_watermeter</item>
+        <item>@string/main_tab_name_hotmeter</item>
+        <item>@string/main_tab_name_topworx</item>
+        <item>@string/main_tab_name_gprs</item>
+    </string-array>
+    <string-array name="watermater_viewpage_arrays">
+        <item>数据</item>
+        <item>显示</item>
+        <item>参数</item>
+        <item>系数</item>
+    </string-array>
+
+
+    <string-array name="news_viewpage_arrays">
+        <item>资讯</item>
+        <item>热点</item>
+        <item>博客</item>
+        <item>推荐</item>
+    </string-array>
+
+</resources>

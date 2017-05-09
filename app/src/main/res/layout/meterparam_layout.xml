@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="?attr/windows_bg">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:orientation="vertical" >
+
+          <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="5.0dip">
+
+			 <Button
+	              android:id="@+id/Buttonreadparameter"
+				 style="@style/button_common_blue_s"
+	              android:gravity="center"
+				 android:focusable="true"
+	              android:text="@string/setparameter_readparameter" />
+			  <EditText
+	              android:id="@+id/EditTextmeterid"
+	              android:layout_width="125dp"
+	              android:layout_height="40.0dip"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/setparameter_meteridhint"
+	              android:maxLength="8"
+	              android:singleLine="true"
+	              android:layout_weight="1"
+				  android:layout_marginLeft="5dip"
+				  android:inputType="number|numberDecimal"
+	              android:textColor="@color/black" >
+
+	          </EditText>
+	          <Button
+	              android:id="@+id/Buttonsetmeterid"
+				  style="@style/button_common_blue_s"
+	              android:gravity="center"
+	              android:text="@string/setparameter_setmeterid"
+	              android:layout_marginLeft="5dip"/>
+		  </LinearLayout>
+
+		  <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="15.0dip">
+	          <Button
+	              android:id="@+id/Buttonamendmeterid"
+				  style="@style/button_common_blue_s"
+	              android:gravity="center"
+	              android:text="@string/setparameter_amendmeterid"/>
+
+	          <EditText
+	              android:id="@+id/EditTextamendmeterid"
+	              android:layout_width="160.0dip"
+	              android:layout_height="40.0dip"
+	              android:layout_weight="1"
+				  android:layout_marginLeft="5dip"
+	              android:background="@drawable/edit_text_x"
+	              android:hint="@string/setparameter_amendmeteridhint"
+	              android:inputType="number|numberDecimal"
+	              android:maxLength="8"
+	              android:singleLine="true"
+	              android:textColor="@color/black" >
+
+	          </EditText>
+	          <Button
+	              android:id="@+id/Buttoninsteadmeterid"
+				  style="@style/button_common_blue_s"
+	              android:gravity="center"
+	              android:text="@string/setparameter_insteadmeterid"
+	              android:layout_marginLeft="5dip" />
+		  </LinearLayout>
+
+		  <LinearLayout
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center_horizontal"
+		      android:layout_marginTop="15.0dip"
+		      android:gravity="center_horizontal" >
+
+	          <Button
+	              android:id="@+id/Buttonopenvalve"
+				  style="@style/button_common_blue_s"
+	              android:gravity="center"
+	              android:layout_weight="1"
+	              android:text="@string/setparameter_openvalve"
+	              android:layout_marginRight="10dip" />
+	          <Button
+	              android:id="@+id/Buttonclosevalve"
+				  style="@style/button_common_blue_s"
+	              android:layout_weight="1"
+	               android:layout_marginLeft="10dip"
+	              android:gravity="center"
+	              android:text="@string/setparameter_closevalve" />
+		  </LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<Button
+					android:id="@+id/Buttonadjusttime"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_adjusttime" />
+				<CheckBox
+					android:id="@+id/CheckBoxsyn"
+					android:layout_width="35dp"
+					android:layout_height="50.0dip"
+					android:checked="true"/>
+				<EditText
+					android:id="@+id/EditTextdatetime"
+					android:layout_width="wrap_content"
+					android:layout_height="40.0dip"
+					android:background="@drawable/edit_text_x"
+					android:textColor="@color/black">
+				</EditText>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<Button
+						android:id="@+id/Buttonchoosedate"
+						style="@style/button_common_blue_s"
+						android:layout_marginTop="1dip"
+						android:layout_height="22dp"
+						android:textSize="@dimen/text_size_10"
+						android:gravity="center"
+						android:text="@string/setparameter_choosedate" />
+					<Button
+						android:id="@+id/Buttonchoosetime"
+						style="@style/button_common_blue_s"
+						android:gravity="center"
+						android:layout_marginTop="1dip"
+						android:layout_height="22dp"
+						android:textSize="@dimen/text_size_10"
+						android:text="@string/setparameter_choosetime" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<Button
+					android:id="@+id/Buttontotalunit"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_totalunit" />
+				<RadioButton
+					android:id="@+id/RadioButtonunitm"
+					android:layout_width="100dp"
+					android:layout_height="50.0dip"
+					android:gravity="center"
+					android:text="@string/setparameter_unitm"
+					android:textColor="#ff000000"
+					android:textSize="20.0sp" />
+				<RadioButton
+					android:id="@+id/RadioButtonunitgal"
+					android:layout_width="100dp"
+					android:layout_height="50.0dip"
+					android:gravity="center"
+					android:text="@string/setparameter_unitgal"
+					android:textColor="#ff000000"
+					android:textSize="20.0sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<Button
+					android:id="@+id/Buttonamendx"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_amendx"/>
+				<EditText
+					android:id="@+id/EditTextamendx"
+					android:layout_width="50.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:inputType="number|numberDecimal"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_amendxhint"
+					android:textColor="@color/black">
+				</EditText>
+
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<Button
+					android:id="@+id/Buttonamendslope"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_slope" />
+				<EditText
+					android:id="@+id/EditTextslope"
+					android:layout_width="50.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:inputType="number|numberDecimal"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_slopehint"
+					android:textColor="@color/black">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<Button
+					android:id="@+id/Buttonstartf"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_startf"/>
+				<EditText
+					android:id="@+id/EditTextstartf"
+					android:layout_width="160.0dip"
+					android:layout_height="40.0dip"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_startfhint"
+					android:layout_weight="1"
+					android:inputType="number|numberDecimal"
+					android:textColor="@color/black">
+				</EditText>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15.0dip">
+				<EditText
+					android:id="@+id/EditTextdiv1"
+					android:layout_width="160.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_div1hint"
+					android:inputType="number|numberDecimal"
+					android:layout_marginRight="10dip"
+					android:textColor="@color/black">
+				</EditText>
+				<EditText
+					android:id="@+id/EditTextdiv2"
+					android:layout_width="160.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_div2hint"
+					android:inputType="number|numberDecimal"
+					android:layout_marginRight="10dip"
+					android:textColor="@color/black">
+				</EditText>
+				<EditText
+					android:id="@+id/EditTextdiv3"
+					android:layout_width="160.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_div3hint"
+					android:inputType="number|numberDecimal"
+					android:textColor="@color/black">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+
+				<TextView
+					android:id="@+id/setparameter_pointwhere"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/setparameter_pointwhere"
+					android:textColor="@color/black" />
+				<Spinner android:id="@+id/spinnerpointwhere"
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:layout_height="50.0dip"  />
+				<TextView
+					android:id="@+id/setparameter_metersize"
+					android:layout_width="wrap_content"
+					android:layout_height="50.0dip"
+					android:text="@string/setparameter_metersize"
+					android:textColor="@color/black" />
+				<Spinner android:id="@+id/spinnermetersize"
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:layout_height="50.0dip"  />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<TextView
+					android:id="@+id/setparameter_sleeptime"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/setparameter_sleeptime"
+					android:textColor="@color/black" />
+				<EditText
+					android:id="@+id/EditTextsleeptime"
+					android:layout_width="160.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:inputType="number|numberDecimal"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_sleeptimehint"
+					android:textColor="@color/black">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:gravity="center">
+				<Button
+					android:id="@+id/Buttonprograme"
+					style="@style/button_common_blue"
+					android:gravity="center"
+					android:text="@string/setparameter_programme" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15.0dip"
+				android:layout_marginBottom="5.0dip">
+				<Button
+					android:id="@+id/Buttoncreditdsumheat"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_rechargesumwater"/>
+				<EditText
+					android:id="@+id/EditTextcreditdsumheat"
+					android:layout_width="0dip"
+					android:layout_height="50.0dip"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_rechargesumwaterunit"
+					android:layout_weight="1"
+					android:inputType="numberSigned"
+					android:layout_marginLeft="5dip"
+					android:textColor="@color/black">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:gravity="center">
+				<Button
+					android:id="@+id/Buttonclearcredit"
+					style="@style/button_common_blue"
+					android:gravity="center"
+					android:text="@string/setparameter_clearwatercredit"/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:layout_marginBottom="5.0dip">
+				<Button
+					android:id="@+id/Buttoninitdsumheat"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_initsumwater" />
+				<EditText
+					android:id="@+id/EditTextinitdsumheat"
+					android:layout_width="100.0dip"
+					android:layout_height="40.0dip"
+					android:layout_weight="1"
+					android:layout_marginLeft="5dip"
+					android:background="@drawable/edit_text_x"
+					android:hint="@string/setparameter_initsumwaterhint"
+					android:inputType="numberSigned"
+					android:textColor="@color/black">
+				</EditText>
+
+			</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip"
+			android:gravity="center"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/TextView04"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setparameter_pulseparam"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dip"
+				android:textColor="@color/darkgray" />
+			<ImageView
+				android:layout_weight="1"
+				android:layout_width="0dip"
+				android:layout_height="1dip"
+				android:background="@color/darkgray" />
+		</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+
+				<Spinner
+					android:id="@+id/spinnerPulseDN"
+					android:layout_weight="1"
+					android:layout_width="200dip"
+					android:layout_height="50.0dip" />
+				<Spinner
+					android:id="@+id/spinnerPulseUnit"
+					android:layout_weight="1"
+					android:layout_width="200dip"
+					android:layout_height="50.0dip" />
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+				<Spinner
+					android:id="@+id/spinnerPulseCycle"
+					android:layout_weight="1"
+					android:layout_width="200dip"
+					android:layout_height="50.0dip" />
+				<Spinner
+					android:id="@+id/spinnerPulseWidth"
+					android:layout_weight="1"
+					android:layout_width="200dip"
+					android:layout_height="50.0dip" />
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:gravity="center">
+				<Button
+					android:id="@+id/btnSetPulse"
+					style="@style/button_common_blue"
+					android:gravity="center"
+					android:text="@string/setparameter_setwaterpulse"/>
+			</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip"
+			android:gravity="center"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/TextView05"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setparameter_loraparam"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dip"
+				android:textColor="@color/darkgray" />
+			<ImageView
+				android:layout_weight="1"
+				android:layout_width="0dip"
+				android:layout_height="1dip"
+				android:background="@color/darkgray" />
+		</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15.0dip">
+				<Button
+					android:id="@+id/btnSetCH"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/topworx_setlorach" />
+				<Spinner
+					android:id="@+id/spinnerlorach"
+					android:layout_weight="1"
+					android:layout_width="220dip"
+					android:layout_height="40.0dip"/>
+			</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip"
+			android:gravity="center">
+			<Button
+				android:id="@+id/btnClearRst"
+				style="@style/button_common_blue"
+				android:gravity="center"
+				android:text="@string/setparameter_clearrst"/>
+		</LinearLayout>
+		  <LinearLayout
+	         android:id="@+id/linearLayout3"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+			  android:layout_marginTop="15.0dip">
+	         <TextView
+	             android:id="@+id/TextViewlabel"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="@string/setparameter_sendlabel"
+	             android:textColor="@color/black" />
+	         <EditText
+	             android:id="@+id/EditTextsend"
+	             android:layout_width="0dip"
+	             android:layout_height="100.0dip"
+	             android:layout_weight="1"
+	             android:background="@drawable/edit_text_x"
+	             android:hint="@string/setparameter_sendtx"
+	             android:textColor="@color/black"/>
+	     </LinearLayout>
+
+	     <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="55dp"
+	         android:gravity="center"
+			 android:layout_marginTop="15.0dip">
+	         <Button
+	             android:id="@+id/Buttoncs16"
+				 style="@style/button_common_blue_s"
+	             android:gravity="center"
+	             android:text="@string/setparameter_cs16"/>
+	         <Button
+	             android:id="@+id/Buttonsend"
+				 style="@style/button_common_blue_s"
+				 android:layout_marginLeft="15dip"
+	             android:gravity="center"
+	             android:text="@string/setparameter_send" />
+
+		 </LinearLayout>
+
+
+	</LinearLayout>
+
+</ScrollView>

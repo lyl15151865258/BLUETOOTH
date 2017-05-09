@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+    <ScrollView
+        android:id="@+id/regist_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:background="?attr/windows_bg" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="0dip"
+			android:orientation="vertical" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="0dip"
+			android:orientation="vertical" >
+			 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				 android:layout_marginTop="10dip">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_laberimei"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvIMEI"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="@string/setgprsparameter_empty"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/darkgreen" />
+
+                <Button
+                    android:id="@+id/btnReadIMEI"
+					style="@style/button_common_blue_s"
+                    android:text="@string/setgprsparameter_txtread"
+                    android:layout_marginRight="10dip"/>
+
+            </LinearLayout>
+           
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+
+				<!--android.support.v7.widget.AppCompatEditText
+					android:id="@+id/editTextIMEI"
+					android:singleLine="true"
+					android:layout_marginLeft="10dip"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:hint="@string/setgprsparameter_imeihint"
+					android:inputType="numberDecimal"
+					android:maxLength="11"
+					android:layout_weight="1.0"/-->
+
+                <EditText
+                    android:id="@+id/editTextIMEI"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_imeihint"
+                    android:maxLength="11"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"   
+                    android:textColor="@color/black">
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnSetIMEI"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:text="@string/setgprsparameter_txtset"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="10dip"/>
+
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+				<ImageView
+				    android:id="@+id/img_seg1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_gravity="center_horizontal"  
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="5.0dip"
+                >
+				<Button
+                    android:id="@+id/btnUserReading"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/setgprsparameter_userreading"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="10dip"/>
+               
+
+                <Button
+                    android:id="@+id/btnUserUpdate"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/setgprsparameter_userupdate"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="10dip" />
+
+            </LinearLayout>
+ 			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" 
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_updateparam"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/darkgray" />
+				<ImageView
+				    android:layout_weight="1"
+				    android:layout_width="0dip"
+				    android:layout_height="1dip"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" 
+                  android:gravity="center"
+                 >
+                 <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_updatecycle"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinnerupdatecycle"
+                   android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="50.0dip" />
+ 
+                    <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_updatehour"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/black" />
+
+ 				<Spinner
+ 				    android:id="@+id/spinnerupdatehour"
+ 				    android:layout_weight="1"
+                    android:layout_width="0dip"
+ 				    android:layout_height="50.0dip" 
+ 				    android:layout_marginRight="10dip"/>
+ 
+              </LinearLayout>
+          
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" 
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_readcycle"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/darkgray" />
+				<ImageView
+				    android:layout_weight="1"
+				    android:layout_width="0dip"
+				    android:layout_height="1dip"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+            <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" 
+                  android:gravity="center"
+                 >
+
+                 <TextView
+                     android:id="@+id/TextView06"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dip"
+                     android:text="@string/setgprsparameter_pwrbattery"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/spinnerpwrbattery"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="50.0dip" />
+ 
+                    <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_pwrelectric"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/black" />
+
+ 				<Spinner
+ 				    android:id="@+id/spinnerpwrelectric"
+ 				    android:layout_weight="1"
+                    android:layout_width="0dip"
+ 				    android:layout_height="50.0dip" 
+ 				    android:layout_marginRight="10dip"/>
+ 				
+              </LinearLayout>
+              
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+				<Button
+                    android:id="@+id/btnReadReadingParam"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/setgprsparameter_readreading"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="10dip"/>
+               
+
+                <Button
+                    android:id="@+id/btnSetReadingParam"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/setgprsparameter_setreading"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="10dip" />
+
+            </LinearLayout>
+              
+              
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_labgprsparameter"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvGprsParam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="@string/setgprsparameter_empty"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/darkgreen" />
+
+                <Button
+                    android:id="@+id/btnReadComm"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:text="@string/setgprsparameter_txtread"
+                    android:layout_marginRight="10dip"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                >
+
+                    <RadioButton
+                        android:id="@+id/radioTcpServer"
+                        android:layout_marginLeft="10dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/setgprsparameter_radiotcpserver"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/radioUdpServer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/setgprsparameter_radioudpserver"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnGprsDefault"
+						style="@style/button_common_blue_s"
+                        android:gravity="center"
+                        android:text="@string/setgprsparameter_factoryIP"
+						android:layout_marginRight="10dip"
+						android:layout_marginLeft="10dip"/>
+              
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+
+                <TextView
+                    android:id="@+id/textViewIP"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_laberip"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextIP1"
+                    android:layout_width="40dp"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="0.27"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_default00"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/black" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextIP2"
+                    android:layout_width="40dp"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="0.29"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_default00"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/TextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextIP3"
+                    android:layout_width="40dp"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_default00"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/TextView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextIP4"
+                    android:layout_width="40dp"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="0.18"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_default00"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:gravity="right" 
+                android:layout_marginTop="5.0dip">
+
+                <TextView
+                    android:id="@+id/TextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/setgprsparameter_laberport"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextPort"
+                    android:layout_width="0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_porthint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+        
+                <Button
+                    android:id="@+id/btnSetComm"
+					style="@style/button_common_blue_s"
+                    android:gravity="center"
+                    android:text="@string/setgprsparameter_txtset"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="10dip"/>
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/darkgray" />
+         	</LinearLayout>
+		
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/textView7"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/setgprsparameter_laberdatetime"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/black" />
+	
+	            <TextView
+	                android:id="@+id/textViewDateTime"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1.0"
+	                android:gravity="center_horizontal"
+	                android:text="@string/setgprsparameter_empty"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/darkgreen" />
+
+	            <Button
+	                android:id="@+id/btnReadDatetime"
+					style="@style/button_common_blue_s"
+	                android:gravity="center"
+	                android:text="@string/setgprsparameter_txtread"
+					android:layout_marginRight="10dip"
+					android:layout_marginLeft="10dip"/>
+	        </LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15.0dip">
+				<Button
+					android:id="@+id/Buttonadjusttime"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/setparameter_adjusttime" />
+				<CheckBox
+					android:id="@+id/CheckBoxsyn"
+					android:layout_width="35dp"
+					android:layout_height="50.0dip"
+					android:checked="true"/>
+				<EditText
+					android:id="@+id/EditTextdatetime"
+					android:layout_width="wrap_content"
+					android:layout_height="50.0dip"
+					android:background="@drawable/edit_text_x"
+					android:textColor="@color/black">
+				</EditText>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<Button
+						android:id="@+id/Buttonchoosedate"
+						style="@style/button_common_blue_s"
+						android:layout_height="22dp"
+						android:textSize="@dimen/text_size_10"
+						android:gravity="center"
+						android:text="@string/setparameter_choosedate" />
+					<Button
+						android:id="@+id/Buttonchoosetime"
+						style="@style/button_common_blue_s"
+						android:layout_marginTop="1dip"
+						android:layout_height="22dp"
+						android:textSize="@dimen/text_size_10"
+						android:gravity="center"
+						android:text="@string/setparameter_choosetime" />
+				</LinearLayout>
+			</LinearLayout>
+	 		<!--<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" >
+
+	 			<CheckBox
+	 			    android:id="@+id/checkBoxDateRefresh"
+	 			    android:layout_width="wrap_content"
+	 			    android:layout_height="wrap_content"
+	 			    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextYear"
+                    android:layout_width="0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_labyear"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="@color/black" >
+                   
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_labshortline"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextMonth"
+                    android:layout_width="36dp"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_labmonth"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_labshortline"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextDay"
+                    android:layout_width="33dp"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_labday"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextHour"
+                    android:layout_width="34dp"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:hint="@string/setgprsparameter_labhour"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+				 <TextView
+                    android:id="@+id/TextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_labcolon"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+				 <EditText
+				     android:id="@+id/editTextMinute"
+				     android:layout_width="34dp"
+				     android:layout_height="40.0dip"
+				     android:background="@drawable/edit_text_x"
+				     android:ems="10"
+				     android:hint="@string/setgprsparameter_labmini"
+				     android:inputType="numberDecimal"
+				     android:maxLength="2"
+				     android:singleLine="true"
+				     android:textColor="@color/black" />
+
+				 <TextView
+                    android:id="@+id/TextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setgprsparameter_labcolon"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+				  <EditText
+				      android:id="@+id/editTextSecond"
+				      android:layout_width="34dp"
+				      android:layout_height="40.0dip"
+				      android:background="@drawable/edit_text_x"
+				      android:ems="10"
+				      android:hint="@string/setgprsparameter_labsecond"
+				      android:inputType="numberDecimal"
+				      android:maxLength="2"
+				      android:singleLine="true"
+				      android:layout_marginRight="10dip"
+				      android:textColor="@color/black" />
+
+            </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5.0dip"
+				android:layout_marginBottom="10dip"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+
+		        <Button
+		            android:id="@+id/btnSynchDatetime"
+					style="@style/button_common_blue"
+		            android:gravity="center"
+		            android:text="@string/setgprsparameter_txtsettime"
+					android:layout_marginRight="10dip"
+					android:layout_marginLeft="10dip"
+		            />
+		    </LinearLayout>-->
+        </LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

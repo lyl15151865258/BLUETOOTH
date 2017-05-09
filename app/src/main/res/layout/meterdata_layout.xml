@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffefebe7">
+    
+    <ScrollView
+        android:id="@+id/regist_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:fillViewport ="true"
+        android:background="#ffefebe7">
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+		    <LinearLayout
+		        android:id="@+id/linearLayout1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:focusable="true"
+				android:focusableInTouchMode="true">
+				<CheckBox
+					android:id="@+id/readdata_check"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/readdata_check"
+					android:checked="true"
+					android:textColor="@color/black" />
+				<EditText
+		              android:id="@+id/EditTextmeterid"
+		              android:layout_width="wrap_content"
+		              android:layout_height="40.0dip"
+		              android:background="@drawable/edit_text_x"
+		              android:hint="@string/readdata_meterid"
+		              android:maxLength="8"
+					  android:inputType="numberDecimal"
+					  android:layout_weight="1"
+					  android:layout_marginLeft="5dip"
+					  android:textColor="@color/black" >
+		          </EditText>
+				<Button
+					android:id="@+id/Buttonreadparameter"
+					style="@style/button_common_blue_s"
+					android:gravity="center"
+					android:text="@string/readdata_getmeterid" />
+		    </LinearLayout>
+			
+		    <LinearLayout
+		          android:layout_width="fill_parent"
+		          android:layout_height="match_parent"
+		          android:orientation="vertical" >
+		           <include
+		              android:id="@+id/viewGroupreaddata"
+		              layout="@layout/listitemreaddata" />
+			       <ListView
+			           android:id="@+id/listViewreaddata"
+			           android:layout_width="fill_parent"
+			           android:layout_height="fill_parent"
+			           android:cacheColorHint="@android:color/transparent"
+			           android:divider="@color/skyblue"
+			           android:dividerHeight="1.0dip"
+			           android:fadingEdge="none"
+			           android:scrollbars="none" 
+			           android:textColor="@color/black">
+				   </ListView>
+	         </LinearLayout>
+
+		 </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

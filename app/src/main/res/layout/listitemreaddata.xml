@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/text_l1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:background="@color/day_colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/readmeter_t1"
+        android:textColor="@color/white" />
+    
+    <View
+        android:layout_width="1.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/skyblue" />
+
+    <TextView
+        android:id="@+id/text_l2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:background="@color/day_colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/readmeter_t2"
+        android:textColor="@color/white" />
+        
+     <View
+         android:layout_width="1.5dip"
+         android:layout_height="fill_parent"
+         android:background="@color/skyblue" />
+
+    <TextView
+        android:id="@+id/text_l3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.80"
+        android:background="@color/day_colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/readmeter_t3"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">迈拓仪表</string>
+    <string name="app_bluetoothstatus">蓝牙状态</string>
+    <string name="app_bluetoothunconnect">蓝牙未配对设备</string>
+    <string name="app_bluetoothunlinked">蓝牙未配连接</string>
+    <string name="app_bluetoothsearch">查找设备</string>
+    <string name="app_bluetoothcancel">取消</string>
+    <string name="app_notice">您确定要断开当前蓝牙连接吗？</string>
+
+    <string name="main_tab_name_watermeter">水表</string>
+    <string name="main_tab_name_hotmeter">热表</string>
+    <string name="main_tab_name_data">读表</string>
+    <string name="main_tab_name_modify">误差</string>
+    <string name="main_tab_name_bluetooth">OK</string>
+    <string name="main_tab_name_gprs">GPRS</string>
+    <string name="main_tab_name_display">显示</string>
+    <string name="main_tab_name_topworx">阀门</string>
+
+    <string name="main_navigation_readdata">读表数据</string>
+    <string name="readdata_meterid">请输入8位出厂编码</string>
+    <string name="readdata_getmeterid">获取表号</string>
+    <string name="readdata_check">标准单位</string>
+    <string name="readmeter_t1">出厂编码</string>
+    <string name="readmeter_t2">发生时间</string>
+    <string name="readmeter_t3">值</string>
+
+    <string name="main_navigation_amenderr">误差调整</string>
+    <string name="amenderr_meterid">出厂编码</string>
+    <string name="amenderr_meteridhint">请输入8位出厂编码</string>
+    <string name="amenderr_readparameter">读流量系数</string>
+    <string name="amenderr_name">流量点</string>
+    <string name="amenderr_err">偏±0.00%</string>
+    <string name="amenderr_qnold">原始系数</string>
+    <string name="amenderr_qnnew">生成系数</string>
+    <string name="amenderr_qn">修常用</string>
+    <string name="amenderr_qn_1hint">误差</string>
+    <string name="amenderr_qn_2hint">原系数</string>
+    <string name="amenderr_qn_3hint">新系数</string>
+    <string name="amenderr_qn2">修 0. 2</string>
+    <string name="amenderr_qn2_1hint">误差</string>
+    <string name="amenderr_qn2_2hint">原系数</string>
+    <string name="amenderr_qn2_3hint">新系数</string>
+    <string name="amenderr_qn1">修 0. 1 </string>
+    <string name="amenderr_qn1_1hint">误差</string>
+    <string name="amenderr_qn1_2hint">原系数</string>
+    <string name="amenderr_qn1_3hint">新系数</string>
+    <string name="amenderr_qmin">修最小</string>
+    <string name="amenderr_qmin_1hint">误差</string>
+    <string name="amenderr_qmin_2hint">原系数</string>
+    <string name="amenderr_qmin_3hint">新系数</string>
+    <string name="amenderr_setq">误差修正</string>
+    <string name="amenderr_setAdjust">调整</string>
+    <string name="amenderr_setCancle">取消</string>
+    <string name="amenderr_setOk">确认</string>
+    <string name="amenderr_notice">请联系迈拓售后，获取修改密码</string>
+    <string name="amenderr_reset">恢复出厂值</string>
+    <string name="amenderr_totalpoint">选择口径 </string>
+
+    <string name="main_navigation_lcd">LCD显示</string>
+    <string name="main_con">蓝牙未连接</string>
+    <string name="main_connect">连接</string>
+    <string name="lcd_meterid">显示表号</string>
+    <string name="lcd_time">时钟</string>
+    <string name="lcd_flowcoef">流量系数+分界点+温度补偿</string>
+    <string name="lcd_flowrate">瞬时流量</string>
+    <string name="lcd_total">A2累计流量</string>
+    <string name="lcd_static">静态值</string>
+    <string name="lcd_sleeptimeandvol">睡眠+电压</string>
+    <string name="lcd_startandsize">始动+口径</string>
+    <string name="lcd_slopeandamend">斜率+修正值</string>
+    <string name="lcd_ver">版本号</string>
+    <string name="lcd_t1">T1</string>
+    <string name="lcd_t2">T2</string>
+    <string name="lcd_A1">A1</string>
+    <string name="lcd_A2">A2</string>
+    <string name="lcd_A3">A3</string>
+
+    <string name="setparameter_rechargesumheat">充热量</string>
+    <string name="setparameter_rechargesumwater">充流量</string>
+    <string name="setparameter_rechargesumheatunit">热量kW*h </string>
+    <string name="setparameter_rechargesumwaterunit">流量10L</string>
+    <string name="setparameter_initsumheathint">请输入初始热量</string>
+    <string name="setparameter_initsumwaterhint">请输入初始流量</string>
+    <string name="setparameter_clearheatcredit">清除热量</string>
+    <string name="setparameter_clearwatercredit">清除流量</string>
+    <string name="setparameter_initsumheat">初始热量</string>
+    <string name="setparameter_initsumwater">初始流量</string>
+
+    <string name="setparameter_setwaterpulse">设置脉冲参数</string>
+    <string name="setparameter_clearrst">清除复位计数</string>
+
+    <string name="setparameter_pulseparam">脉冲设置:</string>
+    <string name="setparameter_loraparam">无线设置:</string>
+
+    <string name="main_navigation_setparameter">参数设置</string>
+    <string name="setparameter_readparameter">获取表号</string>
+    <string name="setparameter_meterid">出厂编码</string>
+    <string name="setparameter_meteridhint">请输入8位出厂编码</string>
+    <string name="setparameter_setmeterid">替换为11</string>
+    <string name="setparameter_openvalve">开阀</string>
+    <string name="setparameter_closevalve">关阀</string>
+    <string name="setparameter_amendmeterid">修改表号</string>
+    <string name="setparameter_amendmeteridhint">请输入8位出厂编码</string>
+    <string name="setparameter_insteadmeterid">替换至上</string>
+    <string name="setparameter_clearmeter">热表清零</string>
+    <string name="setparameter_initreport">初始报表</string>
+    <string name="setparameter_clearbatter">清电池符</string>
+    <string name="setparameter_adjusttime">校正时钟</string>
+    <string name="setparameter_endtime">修改截止日期</string>
+    <string name="setparameter_choosedate">日期</string>
+    <string name="setparameter_choosetime">时间</string>
+    <string name="setparameter_heatunit">kW*h/GJ</string>
+    <string name="setparameter_unitkwh">kW*h</string>
+    <string name="setparameter_unitgj">GJ</string>
+    <string name="setparameter_totalunit">m³/GAL</string>
+    <string name="setparameter_unitm">m³</string>
+    <string name="setparameter_unitgal">GAL</string>
+    <string name="setparameter_amendx">修正系数</string>
+    <string name="setparameter_amendxhint">请输入修正系数</string>
+    <string name="setparameter_slope">斜率修正</string>
+    <string name="setparameter_slopehint">请输入斜率修正</string>
+    <string name="setparameter_startf">启动流量</string>
+    <string name="setparameter_startfhint">请输入启动流量</string>
+    <string name="setparameter_div1">分界点1</string>
+    <string name="setparameter_div1hint">分界点1</string>
+    <string name="setparameter_div2">分界点2</string>
+    <string name="setparameter_div2hint">分界点2</string>
+    <string name="setparameter_div3">分界点3</string>
+    <string name="setparameter_div3hint">分界点3</string>
+    <string name="setparameter_pointwhere">单位:</string>
+    <string name="setparameter_metersize">口径:</string>
+    <string name="setparameter_sleeptime">睡眠时间</string>
+    <string name="setparameter_sleeptimehint">请输入睡眠时间</string>
+    <string name="setparameter_programme">程序切换</string>
+    <string name="setparameter_port">切换通道</string>
+    <string name="setparameter_2">双</string>
+    <string name="setparameter_4">四</string>
+    <string name="setparameter_6">六</string>
+    <string name="setparameter_8">八</string>
+    <string name="setparameter_qn">常用流量系数</string>
+    <string name="setparameter_qnhint">请输入常用流量系数</string>
+    <string name="setparameter_qn2">0. 2 常用流量</string>
+    <string name="setparameter_qn2hint">请输入0.2  常用流量</string>
+    <string name="setparameter_qn1">0. 1 常用流量</string>
+    <string name="setparameter_qn1hint">请输入0.1  常用流量</string>
+    <string name="setparameter_qmin">最小流量系数</string>
+    <string name="setparameter_qminhint">请输入最小流量系数</string>
+    <string name="setparameter_setq">流量修正</string>
+    <string name="setparameter_settcoef">温度补偿</string>
+    <string name="setparameter_t1coefhint">T1补偿</string>
+    <string name="setparameter_t2coefhint">T2补偿</string>
+    <string name="setparameter_t1">T1温度系数</string>
+    <string name="setparameter_t1hint">请输入T1温度系数</string>
+    <string name="setparameter_t2">T2温度系数</string>
+    <string name="setparameter_t2hint">请输入T2温度系数</string>
+    <string name="setparameter_t3">T3温度系数</string>
+    <string name="setparameter_t3hint">请输入T3温度系数</string>
+    <string name="setparameter_t4">T4温度系数</string>
+    <string name="setparameter_t4hint">请输入T4温度系数</string>
+    <string name="setparameter_t5">T5温度系数</string>
+    <string name="setparameter_t5hint">请输入T5温度系数</string>
+    <string name="setparameter_settparameter">设温度系数</string>
+    <string name="setparameter_resetparameter">恢复参数</string>
+    <string name="setparameter_closedate">截止日期</string>
+    <string name="setparameter_closedatehint">请输入截止日期</string>
+    <string name="setparameter_chooseclosedate">选中日期</string>
+    <string name="setparameter_setchecktime">设自检时间</string>
+    <string name="setparameter_setchecktimehint">请输入自检时间</string>
+    <string name="setparameter_permission">设置权限</string>
+    <string name="setparameter_permissionhint">请输入权限</string>
+    <string name="setparameter_setmode">输出方式</string>
+    <string name="setparameter_amendalarm">修报警余量</string>
+    <string name="setparameter_amendalarmhint">请输入报警余量</string>
+    <string name="setparameter_creditdsumheat">充热/流量</string>
+    <string name="setparameter_creditdsumheatunit">热量kW*h 流量10L</string>
+    <string name="setparameter_creditdsumheathint">请输入热/流量值</string>
+    <string name="setparameter_clearcredit">清除热/流量</string>
+    <string name="setparameter_initdsumheat">初始热/流量</string>
+    <string name="setparameter_initdsumheathint">请输入初始热/流量</string>
+    <string name="setparameter_sendlabel">发送:</string>
+    <string name="setparameter_sendtx">请输入发送信息</string>
+    <string name="setparameter_cs16">+CS+16</string>
+    <string name="setparameter_send">发送</string>
+    <string name="setparameter_rxhint">-----等待接收信息-----</string>
+
+    <string name="main_navigation_readparameter">灌新程序</string>
+    <string name="readparameter_readparameter">读内部参数</string>
+    <string name="readparameter_readdata">读内部数据</string>
+    <string name="readparameter_reprogramme">烧制程序</string>
+    <string name="readparameter_meterid">出厂编码 </string>
+    <string name="readparameter_meteridhint">请输入8位出厂编码</string>
+    <string name="readparameter_setmeterid">修改表号</string>
+    <string name="readparameter_qn">常用系数 </string>
+    <string name="readparameter_qnhint">请输入常用系数</string>
+    <string name="readparameter_setq">流量修正</string>
+    <string name="readparameter_qn2">0.2 常    用 </string>
+    <string name="readparameter_qn2hint">请输入0.2常用系数</string>
+    <string name="readparameter_qn1">0.1 常    用 </string>
+    <string name="readparameter_qn1hint">请输入0.1常用系数</string>
+    <string name="readparameter_qmin">最小系数 </string>
+    <string name="readparameter_qminhint">请输入最小系数</string>
+    <string name="readparameter_t1coef">T1温补偿</string>
+    <string name="readparameter_t1coefhint">请输入T1补偿</string>
+    <string name="readparameter_settcoef">温度补偿</string>
+    <string name="readparameter_t2coef">T2温补偿</string>
+    <string name="readparameter_t2coefhint">请输入T2补偿</string>
+    <string name="readparameter_t1">温度系01</string>
+    <string name="readparameter_t1hint">请输入温度系数1</string>
+    <string name="readparameter_sett">设温系数</string>
+    <string name="readparameter_t2">温度系02</string>
+    <string name="readparameter_t2hint">请输入温度系数2</string>
+    <string name="readparameter_t3">温度系03</string>
+    <string name="readparameter_t3hint">请输入温度系数3</string>
+    <string name="readparameter_t4">温度系04</string>
+    <string name="readparameter_t4hint">请输入温度系数4</string>
+    <string name="readparameter_t5">温度系05</string>
+    <string name="readparameter_t5hint">请输入温度系数5</string>
+    <string name="readparameter_checktime">自检时间 </string>
+    <string name="readparameter_checktimehint">请输入自检时间</string>
+    <string name="readparameter_setchecktime">自检时间</string>
+    <string name="readparameter_amendx">修正系数 </string>
+    <string name="readparameter_amendxhint">请输入修正系数</string>
+    <string name="readparameter_setamendx">修正系数</string>
+    <string name="readparameter_heatunit">kW*h/GJ </string>
+    <string name="readparameter_heatunithint">请输入显示单位</string>
+    <string name="readparameter_setheatunit">kW*h/GJ</string>
+    <string name="readparameter_slope">斜率修正 </string>
+    <string name="readparameter_slopehint">请输入斜率</string>
+    <string name="readparameter_setslope">斜率修正 </string>
+    <string name="readparameter_startf">启动流量 </string>
+    <string name="readparameter_startfhint">请输入启动流量</string>
+    <string name="readparameter_setstartf">启动流量</string>
+    <string name="readparameter_metersize">仪表口径 </string>
+    <string name="readparameter_metersizehint">请输入口径</string>
+    <string name="readparameter_ver">程序版本 </string>
+    <string name="readparameter_verhint">请输入程序版本</string>
+    <string name="readparameter_div1">分界点01</string>
+    <string name="readparameter_div1hint">请输入分界点1</string>
+    <string name="readparameter_setprogramme">程序切换</string>
+    <string name="readparameter_div2">分界点02</string>
+    <string name="readparameter_div2hint">请输入分界点2</string>
+    <string name="readparameter_div3">分界点03</string>
+    <string name="readparameter_div3hint">请输入分界点3</string>
+    <string name="readparameter_totalpoint">显示单位 </string>
+    <string name="readparameter_totalpointhint">请输入显示单位</string>
+    <string name="readparameter_sleeptime">睡眠时间 </string>
+    <string name="readparameter_sleeptimehint">请输入睡眠时间</string>
+    <string name="readparameter_sumcool">累计冷量</string>
+    <string name="readparameter_sumcoolhint">请输入累计冷量</string>
+    <string name="readparameter_sumheat">累计热量</string>
+    <string name="readparameter_sumheathint">请输入累计热量</string>
+    <string name="readparameter_total">累计流量(m³):</string>
+    <string name="readparameter_totalhint">请输入累计流量</string>
+    <string name="readparameter_clearmeter">热表清零</string>
+    <string name="readparameter_initreport">初始化报表</string>
+    <string name="readparameter_adjusttime">校正时钟</string>
+    <string name="readparameter_amendused">修正用量</string>
+    <string name="readparameter_vifty">程序校验</string>
+    <string name="readparameter_resulthint">校验提示项</string>
+
+    <string name="main_navigation_topworx">控制阀</string>
+    <string name="topworx_choosedate">截止日期</string>
+    <string name="topworx_setlorach">修改频道:</string>
+
+    <string name="main_navigation_setgprsparameter">GPRS配置</string>
+    <string name="setgprsparameter_empty"> </string>
+    <string name="setgprsparameter_laberimei">IMEI号:</string>
+    <string name="setgprsparameter_readreading">读参数:</string>
+    <string name="setgprsparameter_setreading">设置参数:</string>
+    <string name="setgprsparameter_userreading">触发抄表:</string>
+    <string name="setgprsparameter_userupdate">触发上传:</string>
+    <string name="setgprsparameter_updateparam">上传参数:</string>
+    <string name="setgprsparameter_updatecycle">周期:</string>
+    <string name="setgprsparameter_updatehour">时间点:</string>
+    <string name="setgprsparameter_readcycle">抄表周期:</string>
+    <string name="setgprsparameter_pwrbattery">电池:</string>
+    <string name="setgprsparameter_pwrelectric">市电:</string>
+
+    <string name="setgprsparameter_txtset">设置</string>
+    <string name="setgprsparameter_txtread">读取</string>
+    <string name="setgprsparameter_imeihint">请输入11位IMEI号</string>
+    <string name="setgprsparameter_laberip">IP:</string>
+    <string name="setgprsparameter_setgprsparameter">设置</string>
+    <string name="setgprsparameter_labgprsparameter">GPRS:</string>
+    <string name="setgprsparameter_radiotcpserver">TCP服务</string>
+    <string name="setgprsparameter_radioudpserver">UDP服务</string>
+    <string name="setgprsparameter_laberport">端口:</string>
+    <string name="setgprsparameter_porthint">0~65535</string>
+    <string name="setgprsparameter_default00">0~255</string>
+    <string name="setgprsparameter_laberdatetime">时钟:</string>
+    <string name="setgprsparameter_synchdatetime">同步</string>
+    <string name="setgprsparameter_defaultdatetime">2000-01-01 00:00:00</string>
+    <string name="setgprsparameter_datehint">2016-01-01</string>
+    <string name="setgprsparameter_timehint">12:30:50</string>
+    <string name="setgprsparameter_txtsettime">校时</string>
+    <string name="setgprsparameter_txtmodtime">修改</string>
+    <string name="setgprsparameter_labdate">日期:</string>
+    <string name="setgprsparameter_labtime">时间:</string>
+    <string name="setgprsparameter_labyear">年</string>
+    <string name="setgprsparameter_labmonth">月</string>
+    <string name="setgprsparameter_labday">日</string>
+    <string name="setgprsparameter_labhour">时</string>
+    <string name="setgprsparameter_labmini">分</string>
+    <string name="setgprsparameter_labsecond">秒</string>
+    <string name="setgprsparameter_labshortline">-</string>
+    <string name="setgprsparameter_labcolon">:</string>
+    <string name="setgprsparameter_factoryIP">出厂</string>
+
+    <string name="event_status_end">活动结束</string>
+    <string name="event_status_ing">正在报名</string>
+    <string name="event_status_sing_up">截止报名</string>
+    <string name="event_type_osc">源创会</string>
+    <string name="event_type_tec">技术交流</string>
+    <string name="event_type_other">其他</string>
+    <string name="event_type_outside">站外活动</string>
+
+    <string name="event_apply_status_un_sign">我要报名</string>
+    <string name="event_apply_status_audit">审核中</string>
+    <string name="event_apply_status_confirmed">已确认</string>
+    <string name="event_apply_status_presented">已出席</string>
+    <string name="event_apply_status_canceled">已取消</string>
+    <string name="event_apply_status_refused">已拒绝</string>
+    <string name="event_is_fav">已收藏</string>
+    <string name="event_un_fav">收藏</string>
+
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，小屁孩耍脾气啦。<br />我们会帮你教训一下这个小屁孩！</string>
+    <string name="submit_report">打报告去</string>
+
+    <!-- slide menu -->
+    <string name="menu_rss">订阅</string>
+    <string name="menu_opensoft">开源软件</string>
+    <string name="menu_blog">博客区</string>
+    <string name="menu_quests">技术问答</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_theme">夜间</string>
+
+    <!-- qucik option -->
+    <string name="quick_option_text">文字</string>
+    <string name="quick_option_album">相册</string>
+    <string name="quick_option_photo">拍照</string>
+    <string name="quick_option_voice">语音</string>
+    <string name="quick_option_note">便签</string>
+    <string name="quick_option_scan">扫一扫</string>
+    <string name="quick_option_find">找人</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">已加载全部</string>
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="unlogin">未登录，请先登录</string>
+    <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
+    <string name="my_information_unlogin_tips">未登录</string>
+
+    <string name="hint_username">输入账号/邮箱</string>
+    <string name="hint_password">密码</string>
+    <string name="login">登录</string>
+    <string name="tip_please_input_username">请输入用户名</string>
+    <string name="tip_illegal_email">请输入正确的email地址</string>
+    <string name="tip_please_input_password">请输入密码</string>
+    <string name="progress_login">正在登录…</string>
+    <string name="tip_login_error_for_network">对不起,无法登录</string>
+    <string name="tip_no_internet">当前没有可用的网络链接</string>
+
+    <string name="actionbar_title_news">资讯详情</string>
+    <string name="actionbar_title_blog">博客详情</string>
+    <string name="actionbar_title_software">软件详情</string>
+    <string name="actionbar_title_question">帖子详情</string>
+    <string name="actionbar_title_tweet">动弹详情</string>
+    <string name="actionbar_title_event_detail">活动详情</string>
+    <string name="actionbar_title_event_location">活动地址</string>
+    <string name="actionbar_title_detail">详情</string>
+    <string name="actionbar_title_active">好友圈</string>
+    <string name="actionbar_title_mes">消息中心</string>
+    <string name="actionbar_title_message_detail">对话</string>
+
+    <string name="friend_home">查看对方资料</string>
+    <string name="share_to">分享到</string>
+    <string name="platform_qq">QQ</string>
+    <string name="platform_copy_link">复制链接</string>
+    <string name="platform_more_option">更多</string>
+    <string name="platform_sina">微博</string>
+    <string name="platform_weichat">微信</string>
+    <string name="platform_weichat_circle">朋友圈</string>
+    <string name="share_title">迈拓仪表分享</string>
+    <string name="share_title_news">迈拓仪表资讯分享</string>
+    <string name="share_title_blog">迈拓仪表博客分享</string>
+    <string name="share_title_soft">迈拓仪表软件分享</string>
+    <string name="share_title_post">迈拓仪表帖子分享</string>
+    <string name="tip_start_share">开始分享…</string>
+    <string name="tip_share_done">分享完成</string>
+
+    <string name="detail_menu_unfavorite">取消收藏</string>
+    <string name="detail_menu_favorite">收藏</string>
+    <string name="detail_menu_for_share">分享</string>
+    <string name="detail_menu_for_report">举报</string>
+
+    <string name="add_favorite_success">收藏成功</string>
+    <string name="add_favorite_faile">收藏失败</string>
+    <string name="del_favorite_success">已取消收藏</string>
+    <string name="del_favorite_faile">取消收藏失败</string>
+
+    <string name="actionbar_title_question_tag">%s相关</string>
+    <string name="comment_count">评论(%s)</string>
+    <string name="comment_empty">暂无评论</string>
+    <string name="answer_count">回复(%s)</string>
+    <string name="post_answer">回复</string>
+    <string name="comment_reply_count">---共有%s条回复---</string>
+    <string name="comment_refer_author">引用来自%s的评论</string>
+    <string name="tip_comment_content_empty">评论内容不能为空</string>
+
+    <!-- notification messages -->
+    <string name="comment_blog">发布评论</string>
+    <string name="comment_pub">发表评论</string>
+    <string name="comment_publishing">正在发布你的评论…</string>
+    <string name="comment_publish_success">评论成功</string>
+    <string name="comment_publish_faile">评论失败</string>
+
+    <string name="progress_submit">正在提交…</string>
+
+    <string name="tweet_public">发布动弹</string>
+    <string name="tweet_hint">今天你动弹了吗？</string>
+
+    <string name="tweet_publish_title">发布动弹</string>
+    <string name="tweet_publishing">正在发布动弹…</string>
+    <string name="tweet_publishing_toast">正在发布动弹, 请留意通知栏。</string>
+    <string name="tweet_publish_continue">正在重新发布动弹…</string>
+    <string name="tweet_publish_success">动弹发布成功~</string>
+    <string name="tweet_publish_failed">动弹发布失败, 点击重新发送!</string>
+    <string name="tweet_image_wait">准备图片中…</string>
+    <string name="tweet_image_wait_failed">图片转存失败!</string>
+    <string name="tweet_image_publishing" formatted="false">发布图片中…%s</string>
+    <string name="tweet_image_publish_failed" formatted="false">发布图片失败-[%s/%s]</string>
+
+    <string name="tweet_publish_faile">发布动弹失败</string>
+    <string name="tweet_play_faile">动弹播放失败</string>
+    <string name="tweet_audio_faile">语音动弹发布失败</string>
+    <string name="tweet_detail_data_null">啊噢, 没有找到该动弹~ 可能被主人删除了呢!</string>
+    <string name="cancle_record">取消录音</string>
+    <string name="record_sound_notfound">找不到录音</string>
+    <string name="record_sound_short">时间太短了</string>
+
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="clean_cache_mes">是否清空缓存?</string>
+    <string name="draft_tweet_message">是否保存为草稿?</string>
+    <string name="clearwords">是否清空内容?</string>
+    <string name="choose_picture">选择图片</string>
+    <string name="tip_content_empty">内容不能为空</string>
+    <string name="tip_content_too_long">内容太长</string>
+
+    <string name="actionbar_title_softwarelist">开源软件</string>
+    <string name="actionbar_title_comment">评论列表</string>
+    <string name="actionbar_title_questions">技术问答</string>
+    <string name="actionbar_title_tweetpub">弹一弹</string>
+    <string name="actionbar_title_softtweet">软件动弹列表</string>
+    <string name="actionbar_title_user_center">用户中心</string>
+    <string name="actionbar_title_user_blog">用户博客列表</string>
+    <string name="actionbar_title_user_favorite">用户收藏</string>
+    <string name="actionbar_title_my_information">我的资料</string>
+    <string name="actionbar_title_setting">设置</string>
+    <string name="actionbar_title_setting_notification">新消息提醒</string>
+    <string name="actionbar_title_about_osc">关于迈拓仪表</string>
+    <string name="actionbar_title_note">便签</string>
+    <string name="actionbar_title_noteedit">编辑便签</string>
+    <string name="actionbar_title_shake">摇一摇</string>
+    <string name="actionbar_title_search">搜索</string>
+    <!-- 找人不显示标题 -->
+    <string name="actionbar_title_event">我的活动</string>
+    <string name="actionbar_title_my_event">我的活动</string>
+    <string name="actionbar_title_event_apply">活动出席人员</string>
+    <string name="actionbar_title_same_city">同城</string>
+
+    <!-- 博客区 -->
+    <string name="blog_list_title_heat">最热</string>
+    <string name="blog_list_title_normal">最近</string>
+
+    <string name="actionbar_title_blog_area">博客区</string>
+
+    <string name="private_message">私信</string>
+    <string name="follow_user">关注</string>
+    <string name="unfollow_user">取消关注</string>
+    <string name="follow_each_other">取消互粉</string>
+    <string name="latest_login_time">最近登录  %s</string>
+
+    <string name="actionbar_title_profile">个人中心</string>
+    <string name="favorite">收藏</string>
+    <string name="following">关注</string>
+    <string name="follower">粉丝</string>
+    <string name="join_time">加入于 :</string>
+    <string name="location">所在地区:</string>
+    <string name="development_platform">开发平台:</string>
+    <string name="academic_focus">专长领域:</string>
+
+    <string name="from_web">网页</string>
+    <string name="from_mobile">手机</string>
+    <string name="from_android">Android</string>
+    <string name="from_iphone">iPhone</string>
+    <string name="from_windows_phone">Windows Phone</string>
+    <string name="from_wechat">微信</string>
+
+    <string name="qr_scan_tips">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="actionbar_title_qr_scan">二维码/条码</string>
+
+    <string name="send_message_to">发送私信给:</string>
+    <string name="hint_user_name">对方昵称</string>
+    <string name="hint_message">私信内容</string>
+    <string name="tip_message_public_success">发送成功</string>
+    <string name="tip_message_public_faile">发送失败</string>
+    <string name="send_to">发给</string>
+    <string name="message_count">%s条私信</string>
+
+    <string name="confirm_delete_message">确定要删除和\"%s\"的所有私信吗?</string>
+    <string name="confirm_delete_one_message">确定要删除这条私信吗?</string>
+    <string name="tip_delete_success">删除成功</string>
+    <string name="tip_delete_faile">无法删除</string>
+
+    <string name="copy">复制</string>
+    <string name="repost">转发</string>
+    <string name="delete">删除</string>
+    <string name="copy_success">复制成功</string>
+    <string name="deleting">正在删除…</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_faile">删除失败</string>
+
+    <string name="message_delete_tweet">是否删除该动弹?</string>
+
+    <!-- software detail -->
+    <string name="software_author">软件作者 :</string>
+    <string name="software_license">开源协议 :</string>
+    <string name="software_language">开发语言 :</string>
+    <string name="software_os">操作系统 :</string>
+    <string name="software_recordtime">收录时间 :</string>
+    <string name="software_index">软件首页</string>
+    <string name="software_download">软件下载</string>
+    <string name="software_document">软件文档</string>
+
+    <string name="footer_type_loading">正在加载中…</string>
+    <string name="footer_type_error">加载失败</string>
+    <string name="footer_type_net_error">网络错误</string>
+    <string name="footer_type_not_more">没有更多数据</string>
+
+    <string name="you_have_news_messages">你有%s条最新消息</string>
+    <string name="you_have_unread_messages">你有%s条未读消息</string>
+    <string name="mention_count">\@我[%s] </string>
+    <string name="letter_count">私信[%s] </string>
+    <string name="review_count">评论[%s] </string>
+    <string name="fans_count">新粉丝[%s] </string>
+    <string name="like_count">收到赞[%s] </string>
+
+    <string name="blog">我的博客</string>
+    <string name="information">资料</string>
+    <string name="qrcode">二维码</string>
+    <string name="message">我的消息</string>
+    <string name="team">我的团队</string>
+    <string name="note">便签</string>
+    <string name="my_note">我的便签</string>
+    <string name="str_feedback">反馈</string>
+    <string name="bookmarks">收藏夹</string>
+    <string name="user_score">积分</string>
+
+    <string name="active">好友圈</string>
+    <string name="activities">活动</string>
+    <string name="scan">扫一扫</string>
+    <string name="friends">同城</string>
+    <string name="find_oscer">找人</string>
+    <string name="shake">摇一摇</string>
+
+    <string name="add_notebook">新建便签</string>
+    <string name="submit_notebook">保存便签</string>
+
+    <string name="loading_img">加载图片</string>
+    <string name="mes_notice">消息通知</string>
+    <string name="clean_cache">清理缓存</string>
+    <string name="double_click_exit">双击退出</string>
+    <string name="loading_more">自动加载\"更多\"</string>
+    <string name="update">检查更新</string>
+    <string name="about" translatable="false">关于我们</string>
+    <string name="feedback">意见反馈</string>
+    <string name="exit">退出</string>
+    <string name="setting_cancle">注销</string>
+    <string name="grade">去评分</string>
+
+    <string name="notice_accept">接收新通知</string>
+    <string name="notice_voice">声音</string>
+    <string name="notice_vibration">震动</string>
+    <string name="notice_app_exit">退出后不提醒</string>
+
+    <string name="tip_logout_success">注销成功</string>
+
+    <string name="oscsite">官网</string>
+    <string name="knowmore">了解更多</string>
+    <string name="gitapp">江苏迈拓客户端</string>
+    <string name="copyright">Copyright © 2016 JSMETTER.COM All rights reserved.</string>
+
+    <string name="tip_save_image_suc">图片已保存(手机相册-> osc_img)</string>
+    <string name="tip_save_image_faile">无法保存图片</string>
+    <string name="tip_load_image_faile">加载图片失败</string>
+
+    <string name="down_state">正在下载：%s</string>
+
+    <string name="qr_code_tip">扫一扫上面的二维码，加我为好友</string>
+    <string name="qr_code_tip2">(长按保存到本地)</string>
+
+    <string name="event_start_time">开始：%s</string>
+    <string name="event_end_time">结束：%s</string>
+    <string name="event_location">位置：%s</string>
+
+    <string name="report">举报</string>
+    <string name="report_link">链接地址</string>
+    <string name="report_reson">举报原因</string>
+    <string name="hint_report_desc">其他原因</string>
+    <string name="tip_report_success">举报成功</string>
+    <string name="tip_report_faile">举报失败</string>
+
+    <string name="tip_double_click_exit">再次点击退出迈拓仪表</string>
+
+
+    <string name="team_dynamic">团队动态</string>
+    <string name="actionbar_dynamic_detail">动态内容</string>
+
+    <!-- 反馈 -->
+    <string name="str_feedback_submit">提交</string>
+    <string name="str_feedback_et_hint">我们将为您不断改进</string>
+    <string name="str_feedback_contact">截图描述：（可选）</string>
+    <string name="str_feedback_contact_hint">方便我们给您答复</string>
+    <string name="str_feedback_succeed">谢谢您的反馈，我们会仔细阅读并及时处理</string>
+    <string name="str_feedback_tip">我们会仔细阅读您的反馈，并尽早给您回复。感谢您的理解与支持。</string>
+    <string name="str_feedback_title">用户反馈</string>
+
+    <string name="str_team_userinfo">用户主页</string>
+    <string name="str_team_select_team">选择团队</string>
+
+    <string name="str_team_my_issue">我的任务</string>
+
+    <!-- 选择好友 -->
+    <string name="actionbar_title_select_friends">选择&#064;好友</string>
+    <string name="select_friends_search">搜索</string>
+    <string name="select_friends_noresult">无结果</string>
+    <string name="select_friends_empty">暂无好友</string>
+    <string name="select_friends_max_tips">最多只能选%1$d个好友哦</string>
+    <string name="str_feedback_error">程序错误</string>
+    <string name="str_feedback_function">功能建议</string>
+    <string name="str_request_camera_message">请求获取相机权限</string>
+    <string name="str_action_submic">确定</string>
+    <string name="str_action_cancle">取消</string>
+
+
+    <string name="pub_tweet_required_camera_tip">在设置-应用-迈拓仪表权限中允许拍摄照片，以正常使用发动弹功能</string>
+    <string name="pub_tweet_required_album_tip">在设置-应用-迈拓仪表权限中允许访问你设备上的照片，以正常使用发动弹功能</string>
+
+    <string name="permissions_camera_error">相机无法完成初始化,请正确授权。</string>
+
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+
+    <string name="lable_about_title">相关文章</string>
+    <string name="lable_software">相关软件</string>
+    <string name="vote_up">顶</string>
+    <string name="vote_down">踩</string>
+
+    <string name="gallery_save_file_not_have_external_storage">没有外部存储!</string>
+    <string name="gallery_save_file_success">保存成功!</string>
+    <string name="gallery_save_file_failed">存储失败!</string>
+    <string name="image_select_opt_done">完成</string>
+    <string name="image_select_opt_preview">预览</string>
+
+    <!-- 个人信息-->
+    <string name="action_select">选择操作</string>
+    <string name="action_select_picture">选择图片</string>
+    <string name="title_error_photo">无法保存照片，请检查SD卡是否挂载</string>
+    <string name="title_update_icon_status">正在上传头像中&#8230;</string>
+    <string name="title_icon_null">图像不存在，上传失败</string>
+    <string name="title_icon_upload_error">图片上传失败&#8230;</string>
+    <string name="title_update_success_status">个人信息更新成功&#8230;</string>
+    <string name="title_update_fail_status">个人信息更新失败&#8230;</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
